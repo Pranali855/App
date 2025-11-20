@@ -1,0 +1,48 @@
+.taskCard {
+  width: 100%;
+  background: #ffffff;
+  padding: 14px 18px;
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.taskCard:hover {
+  transform: scale(1.02);
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #4a8cff;   /* Blue tick color */
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background: #ffebeb;
+}
