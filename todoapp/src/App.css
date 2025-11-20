@@ -1,0 +1,140 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.todo-card {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  animation: slideUp 0.6s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 0, 200);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.empty-box {
+  text-align: center;
+  padding: 10px;
+}
+
+.empty-box img {
+  width: 160px;
+  opacity: 0.9;
+}
+
+.empty-box p {
+  margin-top: 10px;
+  color: #ffffffd9;
+  font-size: 18px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.task-item {
+  background: #ffffffcf;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+  animation: fadeIn 0.3s ease;
+}
+
+.task-item:hover {
+  transform: translateX(4px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.del-btn {
+  background: #ff4b4b;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.25s, transform 0.15s;
+}
+
+.del-btn:hover {
+  background: #d60000;
+  transform: scale(1.1);
+}
+.input-area {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #ffffffd8;
+}
+
+.input-area button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.input-area button:hover {
+  background: #3e8e41;
+  transform: scale(1.05);
+}
+.error-msg {
+  text-align: center;
+  color: #ff0033;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
