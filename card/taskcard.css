@@ -1,0 +1,11 @@
+.task-card{
+    background-color: antiquewhite;
+    margin: 15px auto;
+    padding: 5px 20px ;
+    border-radius: 14px;
+    border-left: 5px soli orange;
+}
+.icon-delete{
+    cursor: pointer;
+    color: salmon;
+}
