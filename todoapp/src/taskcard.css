@@ -1,0 +1,21 @@
+.task-card {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+}
+
+.icon-delete {
+  color: #ef4444;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-delete:hover {
+  transform: scale(1.1);
+  color: #dc2626;
+}
